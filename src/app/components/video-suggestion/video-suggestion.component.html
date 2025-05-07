@@ -1,0 +1,17 @@
+<div class="video-row" *ngFor="let item of videoSugListData; index as i;">
+    <div class="row" (click)="playVideo(item)">
+        <div class="col-6">
+            <div class="video-list-thumb">
+                <span class="badge bg-dark">{{item.duration}}</span>
+                <img src="{{item.thumbnail}}" alt="">
+            </div>
+        </div>
+        <div class="col-6 ps-0">
+            <article class="video-content">
+                <h4 class="display-5">{{item.title}}</h4>
+                <p class="ch-name" *ngIf="!!item.author">{{item.author.name}}</p>
+                <p class="tags">{{item.uploaded_at}}</p>
+            </article>
+        </div>
+    </div>
+</div>

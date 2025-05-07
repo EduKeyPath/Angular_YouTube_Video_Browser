@@ -1,0 +1,10 @@
+.search-fld {
+    width: 800px;
+}
+.form-control:focus {
+    border-color: #ced4da !important;
+    box-shadow:none !important;
+}
+.btn-secondary:focus {
+    box-shadow:none !important;
+}

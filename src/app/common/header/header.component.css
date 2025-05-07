@@ -1,0 +1,7 @@
+.navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -100px;
+}
+.c-pointer {
+    cursor: pointer;
+}

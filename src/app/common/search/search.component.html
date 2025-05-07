@@ -1,0 +1,7 @@
+<form #searchForm="ngForm" (ngSubmit)="searchVideos(searchForm.value)">
+    <div class="input-group ms-3 search-fld">
+        <input type="search" ngModel #searchText="ngModel" name="searchText" class="form-control"
+            placeholder="Search videos" />
+        <button class="btn btn-secondary" type="submit">Search</button>
+    </div>
+</form>
